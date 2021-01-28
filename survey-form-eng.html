@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-theme" content="">
+
+        <title>Your Day| Survey Form</title>
+
+        <link rel="icon" href="">
+
+        <link rel="stylesheet"  href="/css/main.css">
+        <link rel="stylesheet"  href="/css/survey-form.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div id="survey-page">
+            <div id="container">
+                <section id="survey-intro">
+                    <h1 id="title">How is your day? </h1>
+                    <p id="description"> Tell us how your day is going...</p>
+                    <h1 id="icon">☘</h1>
+                </section>
+
+                <main>
+                    <form id="survey-form" action="">
+                        
+                        <div class="input-block">
+                            <label id="name-label" for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="Your name is..." required>
+                        </div>
+
+                        <div class="input-block">
+                            <label id="email-label" for="email">Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="Your best email is..." required>
+                        </div>
+
+                        <div id="dropdown" class="select-block">
+                            <label for="gender">Gender</label><br>
+                            <select id="gender" name="gender" required>
+                                <option value="">Your gender is...</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label id="number-label" for="number">On a scale of 1 to 10, How is your day going?</label> <br>
+                            <input type="number" id="number" name="number" min="1" max="10" placeholder="A number between 1 and 10">
+                        </div>
+
+                        <div class="select-block">
+                            <label for="emotion">What emotions have you experienced in your day so far?<span>(Select all that apply)</span></label><br>
+
+                            <input type="checkbox" id="sad" name="emotions" value="sadness">
+                            <label for="sad" class="select">Sadness</label><br>
+                          
+                            <input type="checkbox" id="happy" name="emotions" value="happiness">
+                            <label for="happy" class="select">Happiness</label><br>
+                           
+                            <input type="checkbox" id="fear" name="emotions" value="fear">
+                            <label for="fear" class="select">Fear</label><br>
+
+                            <input type="checkbox" id="anger" name="emotions" value="anger">
+                            <label for="anger" class="select">Anger</label><br>
+
+                            <input type="checkbox" id="surprise" name="emotions" value="surprise">
+                            <label for="surprise" class="select">Surprise</label><br>
+
+                            <input type="checkbox" id="disgust" name="emotions" value="disgust">
+                            <label for="disgust" class="select">Disgust</label><br>
+                        </div>
+
+                        <div class="select-block">
+                            <label for="event-happened">Was there an event that happened to you today that made you feel the emotions you selected?</label><br>
+
+                            <input type="radio" id="yes" name="event" value="yes">
+                            <label for="yes"  class="select">Yes!</label><br>
+                           
+                            <input type="radio" id="no" name="event" value="no">
+                            <label for="no" class="select">No!</label>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="description-event">Please describe this event, if you selected "Yes!" in last question.</label><br>
+                            <textarea id="description-event" name="description-event" placeholder="Tell us about the event and why you felt that way..."></textarea><br>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="improve">How could you improve your day?</label><br>
+                            <textarea id="improve" name="comment" placeholder="How would you like your day to be?"></textarea>
+                        </div>
+
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </main>
+
+                <footer id="footer">
+                    <h3 id="credits">Made by <a id="github-link" href="https://github.com/DuPorangaba" target="_blank">Duda Porangaba</a>.</h3>
+                    <br>
+                    <h3 id="contact">Do you miss anything? Send me a message on <a id="insta-link" href="https://www.instagram.com/dudaporangaba/" target="_blank">Instagram</a>.</h3>
+                
+                    <p id="lang">Available languages:
+                      <a href="survey-form-pt.html" ><img src="/images/portuguese-icon.png " alt="Portuguese language" id="portuguese-icon"></a>
+              
+                      <a href="survey-form-eng.html" ><img src="/images/english-icon.png " alt="English language" id="english-icon"></a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

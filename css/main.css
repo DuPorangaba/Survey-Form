@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100vh;
+}
+
+body{
+    /*background: linear-gradient(90deg, #C9FFBF, #FFAFBD);*/
+    background: linear-gradient(90deg, #A1FFCE, #FAFFD1);
+    display: flex;
+    justify-content: center;
+}
+
+#survey-page{
+    max-width: 700px;
+    font-family: 'Nunito', sans-serif;
+}
