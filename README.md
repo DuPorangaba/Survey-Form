@@ -1,10 +1,3 @@
-# Survey-Form
-The page is a form to know how your day is going. The project's idea was taken from freeCodeCamp.
-<br>
-
-<br>
-A página é um formulário para saber como está indo o seu dia. A ideia do projeto foi retirada do freeCodeCamp.
-<br>
 
 ## Credits/Créditos
 The languages icons were illustrated by Jonathan Coutiño and taken from **thenounproject** (https://thenounproject.com/).<br>
