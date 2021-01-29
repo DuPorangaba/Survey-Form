@@ -164,26 +164,26 @@ a{
         display: grid;
         text-align: left;
         background-color:#A1FFCE;
-        padding: 150px 0 150px 30px;
+        padding: 115px 0 255px 23px;
     }
     
-    #survey-intro #title,
-    #survey-intro #icon{
+    #survey-intro #title{
         font-weight: 800;
-        font-size: 7rem; 
-        line-height: 100px;
+        font-size: 5.25rem; 
+        line-height: 75px;
+    }
+
+    #survey-intro #description{
+        font-weight: 700;
+        font-size: 2.6rem; 
+        line-height: 45px;
     }
 
     #survey-intro #icon{
         justify-self: flex-end;
         align-self:flex-end;
-
-    }
-
-    #survey-intro #description{
-        font-weight: 700;
-        font-size: 3.5rem; 
-        line-height: 60px;
+        font-weight: 800;
+        font-size: 5.2rem;
     }
 
     main{
@@ -192,28 +192,28 @@ a{
 
     form#survey-form{ 
         margin:0;
-        padding: 3rem; 
+        padding: 2rem; 
     }
 
     label{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     label.select{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 700;
         color:#508067;
     }
 
     ::placeholder{
-        font-size: 1.2rem;
-        color:#508067;
+        font-size: 1rem;
+        color:#5f997b;
     }
     
     textarea::placeholder{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 30px;
-        color:#508067;
+        color:#5f997b;
     }
 
     .input-block + .input-block,
@@ -224,7 +224,7 @@ a{
     }
 
     .select-block select{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-left: 10px;
     }
 
@@ -232,11 +232,11 @@ a{
         grid-area: footer;
         height:200px;
         line-height: 25px;
-        font-size: 1.1rem;  
+        font-size: 0.85rem;  
     }
 
     #footer #lang{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
 }
