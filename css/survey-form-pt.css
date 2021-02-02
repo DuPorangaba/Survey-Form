@@ -1,0 +1,246 @@
+/*Title*/
+#survey-intro{
+    text-align: center;
+    
+    padding: 25px 0 10px 0;
+}
+
+#survey-intro #title,
+#survey-intro #icon{
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 38px;
+    color:#2A8053;
+}
+
+#survey-intro #description{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 22px;
+    color:#5FB387; 
+}
+
+/*Form*/
+#survey-form{
+    background:#6a7a7965;
+    padding: 1.2rem;  
+    margin: 0 20px;
+    color: #FAFFD1; 
+    text-align: justify;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+label.select{
+    font-size: 1rem;
+    font-weight: 400;
+    color:#508067;
+}
+
+::placeholder{
+    font-size: 0.95rem;
+    color:#508067;
+}
+
+textarea::placeholder{
+    font-size: 1rem;
+    color:#508067;
+}
+
+.input-block + .input-block,
+.input-block + .select-block,
+.select-block + .input-block,
+.select-block + .select-block{
+    margin-top: 0.8rem;
+}
+
+.input-block input,
+.input-block textarea,
+.select-block select{
+    width:100%;
+    background: white;
+    border: 1px solid #777777;
+    border-radius: 0.3rem;
+    outline-color: #F0A01F;
+    color:#508067;
+    font-size: 1rem;
+}
+
+.input-block input,
+.select-block select{
+    height: 2rem;
+}
+
+.input-block input,
+.input-block textarea{
+    padding: 1rem;
+}
+
+.select-block select{
+    font-size: 0.95rem;
+    padding-left: 0.8rem;
+}
+
+.input-block textarea{
+    height: clamp(4rem, 8rem, 10rem);
+    resize: vertical;
+    line-height: 1.2rem ;
+    font-size: 1.3rem;
+}
+
+#survey-form button#submit{
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.8rem;
+    background-color: #2A8053;
+    border:none;
+    border-radius: 0.5rem;
+    font:700 1.5rem 'Nunito', sans-serif;
+    color:#FAFFD1;
+    cursor: pointer;
+}
+
+#survey-form button#submit:hover{
+    background-color: #61706f;
+}
+
+
+#footer{
+    background: rgba(255, 255, 255, 0.637);
+    font:500 1rem 'Nunito';
+    color:rgb(48, 48, 48);
+    line-height: 1rem;
+    text-align: center;
+    padding: 30px 0;  
+}
+
+#footer #credits{
+    margin-top: 15px;
+}
+
+#footer #contact{
+    line-height: 25px;
+}
+
+/*Available Languages*/
+#footer #lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font:700 1rem 'Nunito';
+    color:rgb(48, 48, 48);
+}
+
+#footer #lang img{
+    width: 45px;
+    max-width: 45px;
+}
+
+/*Hyperlink*/
+a{
+    color: #3D98A8;
+}
+
+@media (min-width: 700px) {
+
+    #survey-page{
+        max-width: 100%;
+        width:100vw;
+    }
+    
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 200px;
+        grid-template-areas: 
+            "sidebar form form"
+            "footer form form";
+    }
+
+    section#survey-intro{
+        grid-area: sidebar;
+        display: grid;
+        text-align: left;
+        background-color:#A1FFCE;
+        padding: 115px 0 280px 23px;
+    }
+    
+    #survey-intro #title{
+        font-weight: 800;
+        font-size: 5.25rem; 
+        line-height: 75px;
+    }
+
+    #survey-intro #description{
+        font-weight: 700;
+        font-size: 2.6rem; 
+        line-height: 45px;
+    }
+
+    #survey-intro #icon{
+        justify-self: flex-end;
+        align-self:flex-end;
+        font-weight: 800;
+        font-size: 5.2rem;
+    }
+
+    main{
+        grid-area: form;   
+    }
+
+    form#survey-form{ 
+        margin:0;
+        padding: 2rem; 
+    }
+
+    label{
+        font-size: 1.2rem;
+    }
+    
+    label.select{
+        font-size: 1.1rem;
+        font-weight: 700;
+        color:#508067;
+    }
+
+    ::placeholder{
+        font-size: 1rem;
+        color:#5f997b;
+    }
+    
+    textarea::placeholder{
+        font-size: 1.2rem;
+        line-height: 30px;
+        color:#5f997b;
+    }
+
+    .input-block + .input-block,
+    .input-block + .select-block,
+    .select-block + .input-block,
+    .select-block + .select-block{
+        margin-top: 1.2rem;
+    }
+
+    .select-block select{
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    #footer{
+        grid-area: footer;
+        height:200px;
+        line-height: 25px;
+        font-size: 0.85rem;  
+    }
+
+    #footer #lang{
+        font-size: 0.8rem;
+    }
+
+}
+
+
